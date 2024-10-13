@@ -1,0 +1,10 @@
+from sklearn.ensemble import IsolationForest
+import joblib
+
+# Example: Anomaly detection on file features
+X_train = [[10, 0.5], [15, 0.3], [8, 0.7]]  # Replace with real features (size, entropy, etc.)
+model = IsolationForest()
+model.fit(X_train)
+
+# Save the anomaly detection model
+joblib.dump(model, 'anomaly_detection_model.pkl')
