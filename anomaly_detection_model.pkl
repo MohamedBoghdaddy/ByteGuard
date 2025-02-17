@@ -7,4 +7,4 @@ model = IsolationForest()
 model.fit(X_train)
 
 # Save the anomaly detection model
-joblib.dump(model, 'anomaly_detection_model.pkl')
+joblib.dump(model, 'anomaly_detection_model.pkl', protocol=4))
